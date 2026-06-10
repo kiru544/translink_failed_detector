@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Translink Failed Trip CSV Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">WELCOME TO CSV CHECKER</p>
+      <h1>Translink <span>Failed</span> Trip Checker</h1>
+      <p>Upload your Translink travel-history CSV to find failed trips and the nearest transactions before and after them.</p>
+    </section>
+
+    <section class="panel">
+      <label for="csvFile" class="file-label">Choose CSV file</label>
+      <input id="csvFile" type="file" accept=".csv,text/csv" />
+      <p id="fileStatus" class="status">No file selected.</p>
+    </section>
+
+    <section id="summary" class="summary hidden" aria-live="polite"></section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
